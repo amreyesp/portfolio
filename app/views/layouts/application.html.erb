@@ -9,7 +9,27 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <div class="header">
+    <div class="container">
+      <div class="nav">
+          <ul>
+            <li> <%= link_to "Welcome", welcome_path %></li>
+            <li> <%= link_to "Portfolio", portfolio_path %> </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
   <body>
     <%= yield %>
   </body>
+
+  <div class="footer">
+    <div class="container">
+      <p>&copy; Social media 2019</p>
+    </div>
+  </div>
+
 </html>
