@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  def welcome
+  def home
   end
 
   def portfolio

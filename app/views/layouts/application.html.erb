@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
+    <title>Ana Reyes portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,17 +11,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <div class="header">
-    <div class="container">
-      <div class="nav">
-          <ul>
-            <li> <%= link_to "Welcome", welcome_path %></li>
-            <li> <%= link_to "Portfolio", portfolio_path %> </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </div>
-    </div>
+  <div class="menu">
+    <ul>
+      <li> <%= link_to "Home", home_path %> </li>
+      <li> <%= link_to "Portfolio", portfolio_path %> </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <img alt="Close" class="icon-close" src="<%= asset_path 'close.svg' %>" width="24px" />
   </div>
 
   <body>
@@ -27,7 +26,8 @@
   </body>
 
   <div class="footer">
-        <p>&copy; Social media 2019</p>
+    <div class="container">
+      <p>&copy; Ana María Reyes Parra 2019</p>
+    </div>
   </div>
-
 </html>
