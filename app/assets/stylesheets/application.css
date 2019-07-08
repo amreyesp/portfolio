@@ -111,9 +111,9 @@
  }
 
  .contact-main {
-     background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg) no-repeat center center;
+     background: url() no-repeat center center;
      background-size: cover;
-     height: 700px
+     height: 650px
  }
 
  .contact-main .content {
