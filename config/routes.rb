@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'pages#home', as: :home
   get '/portfolio' => 'pages#portfolio', as: :portfolio
   get '/about' => 'pages#about', as: :about
+  get '/contact' => 'pages#contact', as: :contact
 
 end
