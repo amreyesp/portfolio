@@ -10,6 +10,11 @@ class PagesController < ApplicationController
   end
 
   def contact
+    require 'octokit'
+    client = Octokit::Client.new
+    user = client.user 'amreyesp'
+    puts user.name
+    puts user.rels[:repos].get.data
   end
 
 end
