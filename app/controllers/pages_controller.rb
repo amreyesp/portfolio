@@ -10,11 +10,22 @@ class PagesController < ApplicationController
   end
 
   def contact
-    require 'octokit'
+
     client = Octokit::Client.new
     user = client.user 'amreyesp'
-    puts user.name
-    puts user.rels[:repos].get.data
+
+    @myrepos = user.rels[:repos].get.data
+    @myforkedrepos = []
+    @myownrepos = []
+
+    for repo in @myrepos
+      if repo.fork == true
+        @myforkedrepos.push(repo)
+      else
+        @myownrepos.push(repo)
+      end
+    end
+    
   end
 
 end
