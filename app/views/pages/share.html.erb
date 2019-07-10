@@ -1,4 +1,4 @@
-<div class="contact-main">
+<div class="share-main">
   <img alt="Open" class="icon-menu" src="<%= asset_path 'menu-black.svg' %>" width="24px" />
   <div class="container">
     <h1>Own repos</h1>
@@ -16,14 +16,14 @@
           <p style="text-align:right"> Updated at: <%= ownrepo.updated_at %> </p>
         </div>
         <div class="col-md-3">
-          <a href="<%=ownrepo.html_url %>" class="btn btn-primary">Go to GitHub</a>
+          <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=ownrepo.html_url %>">Go to GitHub</a>
         </div>
       </div>
     <% end %>
   </div>
 </div>
 
-<div class="contact-main">
+<div class="share-main">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-6">
@@ -33,7 +33,7 @@
     <% @myforkedrepos.each do |forkedrepo| %>
     <div class="row">
       <h2> <%= forkedrepo.name %> </h2>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <p> <%= forkedrepo.description %> </p>
       </div>
       <div class="col-md-3">
@@ -44,7 +44,7 @@
         <p style="text-align:right"> Updated at: <%= forkedrepo.updated_at %> </p>
       </div>
       <div class="col-md-3">
-        <a href="<%=forkedrepo.html_url %>" class="btn btn-primary">Go to GitHub</a>
+        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=forkedrepo.html_url %>" >Go to GitHub</a>
       </div>
     </div>
     <% end %>
