@@ -110,19 +110,19 @@
      font-weight: 100
  }
 
- .contact-main {
+ .share-main {
      background: url() no-repeat center center;
      background-size: cover;
      height: 650px
  }
 
- .contact-main .content {
+ .share-main .content {
      position: relative;
      top: 150px;
      text-align: center
  }
 
- .contact-main h1 {
+ .share-main h1 {
      color: #fff;
      font-weight: 100;
      margin-bottom: 30px;
@@ -130,7 +130,7 @@
      text-align: center;
  }
 
- .contact-main p {
+ .share-main p {
      text-align: justify;
  }
 

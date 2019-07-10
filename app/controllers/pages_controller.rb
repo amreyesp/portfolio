@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def contact
+  def share
 
     client = Octokit::Client.new
     user = client.user 'amreyesp'
@@ -25,7 +25,7 @@ class PagesController < ApplicationController
         @myownrepos.push(repo)
       end
     end
-    
+
   end
 
 end
