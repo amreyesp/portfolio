@@ -102,7 +102,7 @@
      color: #fff;
      font-weight: 100;
      margin-bottom: 30px;
-     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
+     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
  }
 
  .about-main p {
@@ -126,7 +126,12 @@
      color: #fff;
      font-weight: 100;
      margin-bottom: 30px;
-     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
+     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+     text-align: center;
+ }
+
+ .contact-main p {
+     text-align: justify;
  }
 
  /* .footer {
