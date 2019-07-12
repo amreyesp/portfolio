@@ -26,6 +26,9 @@ class PagesController < ApplicationController
       end
     end
 
+    @myownrepos = @myownrepos.sort_by(&:updated_at).reverse[0...4]
+    @myforkedrepos = @myforkedrepos.sort_by(&:created_at).reverse[0...4]
+
   end
 
 end

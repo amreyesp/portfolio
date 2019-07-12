@@ -18,8 +18,8 @@
           <p style="text-align:right"> Language: <%= ownrepo.language %> </p>
         </div>
         <div class="col-md-3">
-          <p style="text-align:right"> Created at: <%= ownrepo.created_at.strftime("%d/%m/%Y")  %> </p>
           <p style="text-align:right"> Updated at: <%= ownrepo.updated_at.strftime("%d/%m/%Y")  %> </p>
+          <p style="text-align:right"> Created at: <%= ownrepo.created_at.strftime("%d/%m/%Y")  %> </p>
         </div>
         <div class="col-md-3" style="text-align:center">
           <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=ownrepo.html_url %>">Go to GitHub</a>
@@ -50,8 +50,7 @@
         <p style="text-align:right"> Language: <%= forkedrepo.language %> </p>
       </div>
       <div class="col-md-3">
-        <p style="text-align:right"> Created at: <%= forkedrepo.created_at.strftime("%d/%m/%Y")  %> </p>
-        <p style="text-align:right"> Updated at: <%= forkedrepo.updated_at.strftime("%d/%m/%Y")  %> </p>
+        <p style="text-align:right"> Forked at: <%= forkedrepo.created_at.strftime("%d/%m/%Y")  %> </p>
       </div>
       <div class="col-md-3" style="text-align:center">
         <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=forkedrepo.html_url %>" >Go to GitHub</a>
