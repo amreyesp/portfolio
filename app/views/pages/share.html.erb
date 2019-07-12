@@ -1,10 +1,16 @@
 <div class="share-main">
   <img alt="Open" class="icon-menu" src="<%= asset_path 'menu-black.svg' %>" width="24px" />
   <div class="container">
-    <h1>Own repos</h1>
+    <div class="col-md-6 col-md-offset-6">
+      <h1>Own repos</h1>
+    </div>
     <% @myownrepos.each do |ownrepo| %>
       <div class="row">
-        <h2> <%= ownrepo.name %> </h2>
+        <div class="col-md-4">
+          <h2> <%= ownrepo.name %> </h2>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-3">
           <p> <%= ownrepo.description %> </p>
         </div>
@@ -12,10 +18,10 @@
           <p style="text-align:right"> Language: <%= ownrepo.language %> </p>
         </div>
         <div class="col-md-3">
-          <p style="text-align:right"> Created at: <%= ownrepo.created_at %> </p>
-          <p style="text-align:right"> Updated at: <%= ownrepo.updated_at %> </p>
+          <p style="text-align:right"> Created at: <%= ownrepo.created_at.strftime("%d/%m/%Y")  %> </p>
+          <p style="text-align:right"> Updated at: <%= ownrepo.updated_at.strftime("%d/%m/%Y")  %> </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" style="text-align:center">
           <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=ownrepo.html_url %>">Go to GitHub</a>
         </div>
       </div>
@@ -32,7 +38,11 @@
     </div>
     <% @myforkedrepos.each do |forkedrepo| %>
     <div class="row">
-      <h2> <%= forkedrepo.name %> </h2>
+      <div class="col-md-4">
+        <h2> <%= forkedrepo.name %> </h2>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-3">
         <p> <%= forkedrepo.description %> </p>
       </div>
@@ -40,10 +50,10 @@
         <p style="text-align:right"> Language: <%= forkedrepo.language %> </p>
       </div>
       <div class="col-md-3">
-        <p style="text-align:right"> Created at: <%= forkedrepo.created_at %> </p>
-        <p style="text-align:right"> Updated at: <%= forkedrepo.updated_at %> </p>
+        <p style="text-align:right"> Created at: <%= forkedrepo.created_at.strftime("%d/%m/%Y")  %> </p>
+        <p style="text-align:right"> Updated at: <%= forkedrepo.updated_at.strftime("%d/%m/%Y")  %> </p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" style="text-align:center">
         <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="<%=forkedrepo.html_url %>" >Go to GitHub</a>
       </div>
     </div>
