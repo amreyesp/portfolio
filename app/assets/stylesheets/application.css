@@ -113,7 +113,7 @@
  .share-main {
      background: url() no-repeat center center;
      background-size: cover;
-     height: 650px
+     height: auto
  }
 
  .share-main .content {
@@ -123,15 +123,30 @@
  }
 
  .share-main h1 {
-     color: #fff;
+     color: #888;
      font-weight: 100;
-     margin-bottom: 30px;
+     margin-bottom: 10px;
+     margin-top: 50px;
      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
      text-align: center;
  }
 
+ .share-main h2 {
+     color: #555;
+     font-weight: 100;
+     font-size: 200%;
+     margin-bottom: 30px;
+     /* text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); */
+     text-align: left;
+ }
+
  .share-main p {
      text-align: justify;
+ }
+
+ .share-main btn-primary {
+    display: flex;
+    justify-content: center;
  }
 
  /* .footer {
