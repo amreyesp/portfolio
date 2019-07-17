@@ -87,9 +87,11 @@
  }
 
  .about-main {
-     background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg) no-repeat center center;
-     background-size: cover;
-     height: 650px
+     /* background-image: url('about1.jpg') no-repeat center center;
+     background-size: cover;*/
+     height: 700px;
+     background-size:cover;
+     background-repeat:no-repeat;
  }
 
  .about-main .content {
