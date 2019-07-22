@@ -42,9 +42,9 @@
  }
 
  .home-main {
-     background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg) no-repeat center center;
+     /*background-image: url('home.jpeg');*/
      background-size: cover;
-     height: 700px
+     height: 800px
  }
 
  .home-main .content {
@@ -71,13 +71,15 @@
      margin: 30px 0
  }
 
- .home-supporting p, .about-supporting p {
+ .home-supporting p {
      font-size: 21px;
      font-weight: 100
  }
 
  .about-supporting p {
-     margin-top: 30px
+     margin-top: 30px;
+     font-size: 18px;
+     font-weight: 300;
  }
 
  .home-secondary {
