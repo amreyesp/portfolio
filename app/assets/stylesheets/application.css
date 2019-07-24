@@ -76,12 +76,6 @@
      font-weight: 100
  }
 
- .about-supporting p {
-     margin-top: 30px;
-     font-size: 18px;
-     font-weight: 300;
- }
-
  .home-secondary {
      background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg) no-repeat center center;
      background-size: cover;
@@ -114,9 +108,15 @@
      font-weight: 100
  }
 
+ .about-supporting p {
+     margin-top: 30px;
+     font-size: 18px;
+     font-weight: 300;
+ }
+
  .share-main {
-     background: url() no-repeat center center;
-     background-size: cover;
+     /* background: url() no-repeat center center;
+     background-size: cover; */
      height: auto
  }
 
@@ -153,19 +153,6 @@
     justify-content: center;
  }
 
- /* .footer {
-     background-color: #f9f9f9;
-     border-top: solid 1px #F5F5F5;
-     padding: 40px 0 30px 0;
-     text-align: center
- }
-
- .footer p {
-     text-transform: uppercase;
-     font-size: 12px;
-     color: #aaa
- } */
-
  .footer {
     /* background-color: #fff; */
     background-color: #f9f9f9;
@@ -174,7 +161,8 @@
     text-align: right;
     width: 100%
     padding: 40px 0 30px 0;
-}
+  }
+
 .footer p {
     font-size: 12px;
     color: #555;
@@ -247,64 +235,40 @@
     background-position: center center
 }
 
+.menu {
+   background-color: #000;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   width: 240px;
+   left: -240px;
+   z-index: 1
+}
 
- .menu {
-     background-color: #000;
-     height: 100%;
-     position: fixed;
-     top: 0;
-     width: 240px;
-     left: -240px;
-     z-index: 1
- }
+.menu ul {
+   list-style: none;
+   padding-left: 0
+}
 
- .menu ul {
-     list-style: none;
-     padding-left: 0
- }
+.menu li a, .menu li a:visited {
+   color: #fff;
+   display: block;
+   font-size: 18px;
+   font-weight: 100;
+   padding: 30px 40px;
+   text-decoration: none
+}
 
- .menu li a, .menu li a:visited {
-     color: #fff;
-     display: block;
-     font-size: 18px;
-     font-weight: 100;
-     padding: 30px 40px;
-     text-decoration: none
- }
+.menu .icon-close {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   cursor: pointer
+}
 
- .menu .icon-close {
-     position: absolute;
-     top: 30px;
-     right: 30px;
-     cursor: pointer
- }
-
- .icon-menu {
-     position: absolute;
-     top: 30px;
-     left: 30px;
-     cursor: pointer
- }
-
- form {
-     text-align: left
- }
-
- .form-control, .btn-default {
-     background-color: rgba(255, 255, 255, 0.8);
-     border-radius: 0
- }
-
- .form-control {
-     font-size: 18px
- }
-
- .form-group label {
-     font-size: 16px;
-     color: #fff
- }
-
- .form-group input {
-     padding: 20px 10px;
-     font-size: 20px
- }
+.icon-menu {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   cursor: pointer
+}
